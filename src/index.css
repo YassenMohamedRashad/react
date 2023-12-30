@@ -1,0 +1,42 @@
+body{
+    overflow-x: hidden;
+}
+.active{
+    color: #198754 !important;
+}
+.Section-title{
+    text-align: center;
+    position: relative;
+    margin: 50px 0px;
+}
+.Section-title h1{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.Section-title::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: #198754;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.Category{
+    height: 300px;
+    background-color: #212529;
+    border-radius: 30px;
+    transition: .5s;
+    border: none;
+}
+.Category:hover{
+    border:3px solid #198754;
+}
+.ProductCard{
+    transition: .5s;
+}
+.ProductCard:hover{
+    transform: scale(1.05);
+}
